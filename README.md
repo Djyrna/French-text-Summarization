@@ -88,9 +88,8 @@ Optimization techniques:
 | Qwen2.5-0.5B | Fine-tuned | **0.2623** | **0.0844** | **0.1697** | 0.7000 | Best overall performance |
 | Qwen2.5-0.5B-Instruct | Fine-tuned | 0.2178 | 0.0589 | 0.1407 | 0.674 | Slightly lower quality |
 
-✅ Fine-tuning improved both **lexical and semantic similarity**.  
-✅ Qwen-General outperformed Qwen-Instruct after fine-tuning.  
-✅ Training loss reduced to **1.83** with optimal parameters.  
+Fine-tuning improved both **lexical and semantic similarity**.  
+Qwen-General outperformed Qwen-Instruct after fine-tuning.  
 
 ---
 
@@ -102,7 +101,7 @@ The experiments showed that even under strong GPU limitations, **fine-tuned ligh
 Among the tested models, the **Qwen2.5-0.5B base model** provided the best trade-off between **performance, training time, and hardware feasibility**.  
 Although larger datasets and longer training time could improve performance further, this work demonstrates the viability of **low-cost multilingual summarization** using modern quantization and fine-tuning techniques.
 
-## 🧰 Technologies Used
+## Technologies Used
 - Python (Transformers, PEFT, Evaluate, Datasets)
 - QLoRA (Quantized Low-Rank Adaptation)
 - Hugging Face Hub (OrangeSum dataset, model hosting)
